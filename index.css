@@ -1,0 +1,14 @@
+#lista-checkbox {
+    list-style-type: none;
+}
+#lista-checkbox input {
+margin: 0.4em;
+}
+#calcular {
+padding: 0.3em;
+font-size: 1.1em;
+margin: 0.5em;
+}
+#latas-cerveja {
+list-style: none;
+}
