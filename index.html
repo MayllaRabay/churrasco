@@ -5,49 +5,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Churrasco</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Fazendo compras para seu churrasco</h1>
+    <div class="container">
+        <h1>Fazendo compras para seu churrasco</h1>
 
-    <p>Selecione os itens que irá comprar:</p>
+        <p>Selecione os itens que irá comprar:</p>
 
-    <ul id="lista-checkbox"> 
-        <li>
-            <input id="checkbox-carne" type="checkbox">Carne
-        </li>
-        <li>
-            <input id="checkbox-calabresa" type="checkbox">Calabresa
-        </li>
-        <li>
-            <input id="checkbox-cerveja" type="checkbox">Cerveja
-            <ul id="latas-cerveja">
-                <li><input type="radio" name="cerveja">Garrafa de 600ml</li>
-                <li><input type="radio" name="cerveja">Latão 475ml</li>
-                <li><input type="radio" name="cerveja">Long neck 330ml</li>
-                <li><input type="radio" name="cerveja">Lata 350ml</li>
-                <li><input type="radio" name="cerveja">Latinha 269ml</li>
-            </ul>
-        </li>
-        <li>
-            <input id="checkbox-refri" type="checkbox">Refrigerante
-        </li>
-    </ul>
+        <ul id="lista-checkbox"> 
+            <li>
+                <div class="lista-itens">
+                    <img src="assets/meat.png" alt="">
+                    <input id="checkbox-carne" type="checkbox">Carne
+                </div>
+            </li>
+            <li>
+                <div class="lista-itens">
+                    <img src="assets/sausage.png" alt="">
+                    <input id="checkbox-linguica" type="checkbox">Linguiça
+                </div>
+            </li>
+            <li>
+                <div class="lista-itens">
+                    <img src="assets/beer.png" alt="">
+                    <input id="checkbox-cerveja" type="checkbox">Cerveja
+                </div>
+                <ul id="latas-cerveja">
+                    <li><input type="radio" name="cerveja">Garrafa de 600ml</li>
+                    <li><input type="radio" name="cerveja">Latão 475ml</li>
+                    <li><input type="radio" name="cerveja">Long neck 330ml</li>
+                    <li><input type="radio" name="cerveja">Lata 350ml</li>
+                    <li><input type="radio" name="cerveja">Latinha 269ml</li>
+                </ul>
+            </li>
+            <li>
+                <div class="lista-itens">
+                    <img src="assets/soda.png" alt="">
+                    <input id="checkbox-refri" type="checkbox">Refrigerante
+                </div>
+            </li>
+        </ul>
 
-    <p>Agora informe a quantidade de adultos e crianças que irão participar:</p>
+        <p>Agora informe a quantidade de adultos e crianças que irão participar:</p>
 
-    <label>Adultos:
-        <input id="adultos" type="number">
-    </label>
+        <div class="qtd-pessoas">
 
-    <label>Crianças:
-        <input id="criancas" type="number">  
-    </label>
+            <div class="tipo-pessoa">
+                <label>Adultos:
+                    <input id="adultos" type="number">
+                </label>
+            </div>
 
-    <button id="calcular">Calcular</button>
+            <div class="tipo-pessoa">
+                <label>Crianças:
+                    <input id="criancas" type="number">  
+                </label>
+            </div>
 
-    <p id="mensagem" hidden>Você precisará de:</p>
-    
-    <ul id="lista-churrasco"> 
-    </ul>
+            <button id="calcular">Calcular</button>
+            <img src="assets/logo.png" alt="" width="55px">
+        </div>
+
+        <p id="mensagem" hidden>Você precisará de:</p>
+        
+        <ul id="lista-churrasco"> 
+        </ul>
+
+    </div>
 </body>
 </html>
