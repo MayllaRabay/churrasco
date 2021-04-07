@@ -11,8 +11,16 @@ const checkCerveja = document.querySelector("#checkbox-cerveja");
 const latasCerveja = document.querySelector("#latas-cerveja");
 const checkRefri = document.querySelector("#checkbox-refri");
 
+const listaLatas = latasCerveja.querySelectorAll("input");
+for(let i = 0; i < listaLatas.length; i++) {
+    listaLatas[i].addEventListener("input", () => {
+        if(listaLatas[i].checked && !checkCerveja.checked) {
+            checkCerveja.checked = true;
+        };
+    })
+};
+
 checkCerveja.addEventListener("input", () => {
-    const listaLatas = latasCerveja.querySelectorAll("input");
     for(let i = 0; i < listaLatas.length; i++) {
         if(checkCerveja.checked) {
             listaLatas[0].checked = true;
