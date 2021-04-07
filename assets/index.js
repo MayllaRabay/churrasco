@@ -47,8 +47,8 @@ button.addEventListener("click", () => {
   
         listaChurrasco.innerText = "";
 
-        const qtdCarne = (500 * (qtdAdultos.value)) + (200 * (qtdCriancas.value));
-        const qtdLinguica = (300 * (qtdAdultos.value)) + (100 * (qtdCriancas.value));
+        const qtdCarne = (500 * (qtdAdultos.value)) + (150 * (qtdCriancas.value));
+        const qtdLinguica = (200 * (qtdAdultos.value)) + (50 * (qtdCriancas.value));
         const qtdCerveja = 1.5 * (qtdAdultos.value);
         const qtdRefri = (1 * (qtdAdultos.value)) + (0.5 * (qtdCriancas.value));
     
