@@ -18,33 +18,78 @@
         <ul id="lista-checkbox"> 
             <li>
                 <div class="lista-itens">
-                    <img src="assets/meat.png" alt="">
-                    <input id="checkbox-carne" type="checkbox">Carne
+                    <label for="checkbox-carne">
+                        <img src="assets/meat.png" alt="Ícone de carne">
+                    </label>
+                        <input id="checkbox-carne" type="checkbox">
+                    <label for="checkbox-carne">
+                        Carne
+                    </label>
                 </div>
             </li>
             <li>
                 <div class="lista-itens">
-                    <img src="assets/sausage.png" alt="">
-                    <input id="checkbox-linguica" type="checkbox">Linguiça
+                    <label for="checkbox-linguica">
+                        <img src="assets/sausage.png" alt="Ícone de linguiça">
+                    </label>
+                    <input id="checkbox-linguica" type="checkbox">
+                    <label for="checkbox-linguica">
+                        Linguiça
+                    </label>
                 </div>
             </li>
             <li>
                 <div class="lista-itens">
-                    <img src="assets/beer.png" alt="">
-                    <input id="checkbox-cerveja" type="checkbox">Cerveja
+                    <label for="checkbox-cerveja">
+                        <img src="assets/beer.png" alt="Ícone de cerveja">
+                    </label>
+                    <input id="checkbox-cerveja" type="checkbox">
+                    <label for="checkbox-cerveja">
+                        Cerveja
+                    </label>
                 </div>
                 <ul id="latas-cerveja">
-                    <li><input type="radio" name="cerveja">Garrafa de 600ml</li>
-                    <li><input type="radio" name="cerveja">Latão 475ml</li>
-                    <li><input type="radio" name="cerveja">Long neck 330ml</li>
-                    <li><input type="radio" name="cerveja">Lata 350ml</li>
-                    <li><input type="radio" name="cerveja">Latinha 269ml</li>
+                    <li>
+                        <input id="garrafa" type="radio" name="cerveja">
+                        <label for="garrafa">
+                            Garrafa de 600ml
+                        </label>
+                    </li>
+                    <li>
+                        <input id="latao" type="radio" name="cerveja">
+                        <label for="latao">
+                            Latão 475ml
+                        </label>
+                    </li>
+                    <li>
+                        <input id="lata" type="radio" name="cerveja">
+                        <label for="lata">
+                            Lata 350ml
+                        </label>
+                    </li>
+                    <li>
+                        <input id="long-neck"type="radio" name="cerveja">
+                        <label for="long-neck">
+                            Long neck 330ml
+                        </label>
+                    </li>
+                    <li>
+                        <input id="latinha" type="radio" name="cerveja">
+                        <label for="latinha">
+                            Latinha 269ml
+                        </label>
+                    </li>
                 </ul>
             </li>
             <li>
                 <div class="lista-itens">
-                    <img src="assets/soda.png" alt="">
-                    <input id="checkbox-refri" type="checkbox">Refrigerante
+                    <label for="checkbox-refri">
+                        <img src="assets/soda.png" alt="Ícone de refrigerante">
+                    </label>
+                    <input id="checkbox-refri" type="checkbox">
+                    <label for="checkbox-refri">
+                        Refrigerante
+                    </label>
                 </div>
             </li>
         </ul>
@@ -66,7 +111,7 @@
             </div>
 
             <button id="calcular">Calcular</button>
-            <img src="assets/logo.png" alt="" width="55px">
+            <img src="assets/logo.png" alt="Ícone de churrasqueira" width="55px">
         </div>
 
         <p id="mensagem" hidden>Você precisará de:</p>
