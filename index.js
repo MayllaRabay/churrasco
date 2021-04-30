@@ -1,10 +1,13 @@
 const qtdCriancas = document.querySelector("#criancas");
 const qtdAdultos = document.querySelector("#adultos");
-const button = document.querySelector("#calcular");
-const mensagem = document.querySelector("#mensagem");
-const listaChurrasco = document.querySelector("#lista-churrasco");
 
-const listaCheckbox = document.querySelector("#lista-checkbox");
+const button = document.querySelector("#calcular");
+
+const mensagem = document.querySelector("#mensagem");
+
+const listaChurrasco = document.querySelector("#list__barbecue");
+const listaCheckbox = document.querySelector("#list");
+
 const checkCarne = document.querySelector("#checkbox-carne");
 const checkLinguica = document.querySelector("#checkbox-linguica");
 const checkCerveja = document.querySelector("#checkbox-cerveja");
@@ -32,12 +35,14 @@ checkCerveja.addEventListener("input", () => {
 
 button.addEventListener("click", () => {
     const itens = listaCheckbox.querySelectorAll("input");
+
     let itensMarcados = 0;
     for(item of itens) {
         if(item.checked === true) {
             itensMarcados++;
         };
     };
+
     if(itensMarcados === 0) {
         alert("Por favor selecione algum item");
     } else if (qtdAdultos.value == "" || qtdCriancas.value == "") {
@@ -58,12 +63,14 @@ button.addEventListener("click", () => {
             item.append(texto);
             listaChurrasco.append(item);
         };
+
         if(checkLinguica.checked) {
             const item = document.createElement("li");
             const texto = `${qtdLinguica}g de linguiça`;
             item.append(texto);
             listaChurrasco.append(item);
         };
+
         if(checkCerveja.checked) {
             const listaLatas = latasCerveja.querySelectorAll("input");
             const valorLatas = [0.600, 0.475, 0.330, 0.350, 0.269];
@@ -75,6 +82,7 @@ button.addEventListener("click", () => {
             };
       
             const qtdLatas = Math.round(qtdCerveja / valorLata);
+
             let textoLatas = "";
             if (qtdLatas == 1) {
                 textoLatas = "lata"
@@ -87,6 +95,7 @@ button.addEventListener("click", () => {
             item.append(texto);
             listaChurrasco.append(item);
         };
+
         if(checkRefri.checked) {
             const item = document.createElement("li");
             const texto = `${qtdRefri}L de refrigerante`;
@@ -99,6 +108,7 @@ button.addEventListener("click", () => {
                 item.checked = false;
             };
         };
+
         qtdAdultos.value = "";
         qtdCriancas.value = "";
     };
