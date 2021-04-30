@@ -8,112 +8,113 @@
     <link rel="stylesheet" href="index.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/barbecue-icon.png">
 </head>
 <body>
-    <div class="container">
+    <main>
         <h1>Fazendo compras para seu churrasco</h1>
 
         <p>Selecione os itens que irá comprar:</p>
-        <ul id="lista-checkbox"> 
+        <ul id="list"> 
             <li>
-                <div class="lista-itens">
+                <div class="list__item">
                     <label for="checkbox-carne">
-                        <img src="assets/meat.png" alt="Ícone de carne">
+                        <img src="images/meat.png" alt="Carne">
                     </label>
-                        <input id="checkbox-carne" type="checkbox">
+
+                    <input id="checkbox-carne" type="checkbox">
+
                     <label for="checkbox-carne">
                         Carne
                     </label>
                 </div>
             </li>
             <li>
-                <div class="lista-itens">
+                <div class="list__item">
                     <label for="checkbox-linguica">
-                        <img src="assets/sausage.png" alt="Ícone de linguiça">
+                        <img src="images/sausage.png" alt="Linguiça">
                     </label>
+
                     <input id="checkbox-linguica" type="checkbox">
-                    <label for="checkbox-linguica">
-                        Linguiça
-                    </label>
+
+                    <label for="checkbox-linguica">Linguiça</label>
                 </div>
             </li>
             <li>
-                <div class="lista-itens">
+                <div class="list__item">
                     <label for="checkbox-cerveja">
-                        <img src="assets/beer.png" alt="Ícone de cerveja">
+                        <img src="images/beer.png" alt="Cerveja">
                     </label>
+
                     <input id="checkbox-cerveja" type="checkbox">
-                    <label for="checkbox-cerveja">
-                        Cerveja
-                    </label>
+
+                    <label for="checkbox-cerveja">Cerveja</label>
                 </div>
                 <ul id="latas-cerveja">
                     <li>
                         <input id="garrafa" type="radio" name="cerveja">
-                        <label for="garrafa">
-                            Garrafa de 600ml
-                        </label>
+                        <label for="garrafa">Garrafa de 600ml</label>
                     </li>
                     <li>
                         <input id="latao" type="radio" name="cerveja">
-                        <label for="latao">
-                            Latão 475ml
-                        </label>
+                        <label for="latao">Latão 475ml</label>
                     </li>
                     <li>
                         <input id="lata" type="radio" name="cerveja">
-                        <label for="lata">
-                            Lata 350ml
-                        </label>
+                        <label for="lata">Lata 350ml</label>
                     </li>
                     <li>
                         <input id="long-neck"type="radio" name="cerveja">
-                        <label for="long-neck">
-                            Long neck 330ml
-                        </label>
+                        <label for="long-neck">Long neck 330ml</label>
                     </li>
                     <li>
                         <input id="latinha" type="radio" name="cerveja">
-                        <label for="latinha">
-                            Latinha 269ml
-                        </label>
+                        <label for="latinha">Latinha 269ml</label>
                     </li>
                 </ul>
             </li>
             <li>
-                <div class="lista-itens">
+                <div class="list__item">
                     <label for="checkbox-refri">
-                        <img src="assets/soda.png" alt="Ícone de refrigerante">
+                        <img src="images/soda.png" alt="Refrigerante">
                     </label>
+
                     <input id="checkbox-refri" type="checkbox">
-                    <label for="checkbox-refri">
-                        Refrigerante
-                    </label>
+
+                    <label for="checkbox-refri">Refrigerante</label>
                 </div>
             </li>
         </ul>
 
         <p>Agora informe a quantidade de adultos e crianças que irão participar:</p>
-        <div class="qtd-pessoas">
-            <div class="tipo-pessoa">
+        <div class="qtd__people">
+
+            <div class="type__people">
                 <label>Adultos:
                     <input id="adultos" type="number">
                 </label>
             </div>
-            <div class="tipo-pessoa">
+
+            <div class="type__people">
                 <label>Crianças:
                     <input id="criancas" type="number">  
                 </label>
             </div>
+
             <button id="calcular">Calcular</button>
-            <img src="assets/logo.png" alt="Ícone de churrasqueira" width="55px">
+            <img src="images/logo.png" alt="" width="55px">
         </div>
 
         <p id="mensagem" hidden>Você precisará de:</p>
-        <ul id="lista-churrasco"> 
-        </ul>
+        <ul id="list__barbecue">
 
-    </div>
+        </ul>
+    </main>
+
+    <footer>
+        <p>Criado por <a href="https://www.linkedin.com/in/mayllarabay/">Maylla Rabay</a>.
+            Todos os Direitos Reservados ao Criador. ©2021</p>
+    </footer>
 </body>
-<script src="assets/index.js"></script>
+<script src="./index.js"></script>
 </html>
