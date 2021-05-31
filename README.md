@@ -26,7 +26,7 @@
   </ul>
 
 ## 🎨 Layout
-  Design próprio. Cores utilizadas:
+  Design próprio, com imagens retiradas da internet e editadas no GIMP. Cores utilizadas:
   - rgb(233, 155, 83) (laranja)
   - #f6efe9 (bege claro)
   - #b2845a (marrom)
