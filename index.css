@@ -3,9 +3,10 @@
 }
 
 body {
+    background-color: #f6efe9;
     background-image: url(images/background.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-position: center;
     font-family: 'Nunito', sans-serif;
 }
 
@@ -65,10 +66,11 @@ main {
 }
 
 footer {
-    font-size: 87.5%; /* 14px */
+    color: black;
     font-weight: 800;
     padding: 0 1rem 1rem 1rem;
     text-align: center;
+    text-shadow: 1px 1px 0px #b2845a;
 }
 
 footer a {
